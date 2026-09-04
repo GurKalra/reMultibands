@@ -1,0 +1,28 @@
+# --- Virtual environment ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Python cache/build artifacts ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# --- Generated audit output (not read by the dashboard, regenerates every run) ---
+audit/decisions.json
+audit/decisions_sample.json
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Environment variables (if you ever add API keys, e.g. for a future WhatsApp/Razorpay integration) ---
+.env
