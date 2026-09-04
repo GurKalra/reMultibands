@@ -3,7 +3,7 @@
 **AI Revenue Recovery - a compliant, learning mandate retry sequencer**
 Built for Razorpay's hackathon, Track 3: AI Revenue Recovery.
 
-[**Live Demo →**](YOUR_DEPLOYMENT_LINK_HERE)
+[**Live Demo!**](https://remultibands.streamlit.app)
 
 ![demo](docs/demo.gif)
 
