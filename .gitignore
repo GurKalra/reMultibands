@@ -26,3 +26,6 @@ Thumbs.db
 
 # --- Environment variables (if you ever add API keys, e.g. for a future WhatsApp/Razorpay integration) ---
 .env
+
+# --- Personal Files ---
+info.txt
