@@ -5,7 +5,7 @@ Built for Razorpay's hackathon, Track 3: AI Revenue Recovery.
 
 [**Live Demo →**](YOUR_DEPLOYMENT_LINK_HERE)
 
-demogif
+![demo](docs/demo.GIF)
 
 ## The Problem
 
