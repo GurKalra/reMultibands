@@ -9,7 +9,7 @@ the middle of the screen.
 import html as html_lib
 import json
 
-import streamlit.components.v1 as components
+import streamlit as st
 
 ACCENT = "#10b981"
 
@@ -200,4 +200,4 @@ def render_info_cards(cards, height=600):
       }});
     </script>
     """
-    components.html(html_doc, height=height, scrolling=False)
+    st.iframe(html_doc, height=height)

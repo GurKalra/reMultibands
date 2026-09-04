@@ -9,7 +9,6 @@ A network selector lets you slice across the four payment rails.
 import json
 
 import streamlit as st
-import streamlit.components.v1 as components
 
 from shared.simulation_runner import get_bandit_snapshots, BANKS, ERROR_CODES, PAYMENT_NETWORKS
 from shared.theme import apply_custom_css, prettify
@@ -523,4 +522,4 @@ ARMS.forEach((arm, i) => {{
 </div>
 """
 
-components.html(html, height=1050, scrolling=True)
+st.iframe(html, height=1050)

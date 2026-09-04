@@ -86,7 +86,7 @@ display_df["decision_source"] = display_df["decision_source"].map(prettify)
 display_df = display_df.reset_index(drop=True)
 display_df.index = display_df.index + 1  # 1-based row numbering
 
-st.dataframe(display_df, use_container_width=True, height=460)
+st.dataframe(display_df, width="stretch", height=500)
 
 st.divider()
 st.markdown("### A few representative decisions")

@@ -35,13 +35,13 @@ if not st.session_state.has_run_initial_sim:
     )
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        if st.button("Run Simulation", type="primary", use_container_width=True):
+        if st.button("Run Simulation", type="primary", width="stretch"):
             st.session_state.has_run_initial_sim = True
             st.rerun()
 else:
     col_a, col_b = st.columns([3, 1])
     with col_b:
-        if st.button("Run on New Seed", use_container_width=True):
+        if st.button("Run on New Seed", width="stretch"):
             st.session_state.seed = new_random_seed()
             st.rerun()
 

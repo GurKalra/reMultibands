@@ -9,7 +9,6 @@ comparison - all rendered as custom HTML components.
 import json
 
 import streamlit as st
-import streamlit.components.v1 as components
 
 from shared.simulation_runner import run_robustness_sweep
 
@@ -270,7 +269,7 @@ SEEDS.forEach(function(seed, i) {{
 </div>
 """
 
-components.html(viz_html, height=900, scrolling=True)
+st.iframe(viz_html, height=900)
 
 if wins == total_seeds and zero_strikes:
     st.success(

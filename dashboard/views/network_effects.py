@@ -10,7 +10,6 @@ import random
 import json
 
 import streamlit as st
-import streamlit.components.v1 as components
 
 from shared.simulation_runner import BANKS, ERROR_CODES, PAYMENT_NETWORKS
 from shared.theme import apply_custom_css, prettify
@@ -92,7 +91,7 @@ flow_html = """
 </svg>
 </div>
 """
-components.html(flow_html, height=185, scrolling=False)
+st.iframe(flow_html, height=204)
 
 st.divider()
 

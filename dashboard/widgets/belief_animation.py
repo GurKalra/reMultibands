@@ -9,7 +9,7 @@ labels, and optional glow highlight on a specified arm.
 import html as html_lib
 import json
 
-import streamlit.components.v1 as components
+import streamlit as st
 
 from shared.theme import prettify
 
@@ -127,4 +127,4 @@ def render_belief_bars(values: dict, title: str = "", height: int = 280,
     }}
     </script>
     """
-    components.html(html_doc, height=height, scrolling=False)
+    st.iframe(html_doc, height=height, scrolling=False)

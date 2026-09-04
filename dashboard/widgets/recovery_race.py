@@ -7,7 +7,7 @@ counts up in sync with the animation. Each metric card is clickable to
 reveal an explanation.
 """
 
-import streamlit.components.v1 as components
+import streamlit as st
 
 
 def render_recovery_race(baseline_result, remultibands_result, height=500):
@@ -287,4 +287,4 @@ def render_recovery_race(baseline_result, remultibands_result, height=500):
       }}
     </script>
     """
-    components.html(html, height=height, scrolling=False)
+    st.iframe(html, height=height)

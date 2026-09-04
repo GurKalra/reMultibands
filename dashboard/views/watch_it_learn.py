@@ -10,7 +10,6 @@ summary panel on the right showing key insights from the run.
 import json
 
 import streamlit as st
-import streamlit.components.v1 as components
 
 from shared.simulation_runner import run_segment_walkthrough, BANKS, ERROR_CODES, PAYMENT_NETWORKS
 from shared.theme import prettify
@@ -459,4 +458,4 @@ else:
     </div>
     """
 
-    components.html(animated_html, height=960, scrolling=True)
+    st.iframe(animated_html, height=960)
