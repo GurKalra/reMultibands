@@ -69,9 +69,10 @@ the cap is reached.
 payments can sit "deemed approved" and reverse up to **T+5 days** later. Claws back the
 revenue and corrects the bandit's posterior so it doesn't learn from a false positive.
 
-Validated against two real production bandit-routing deployments (Chaudhary et al. 2023 -
-Dream11; Agrawal & Patil 2025) - see the in-app **How It Works** page for full citations
-and an honest breakdown of what's sourced vs. assumed.
+Validated against two real production bandit-routing deployments — [Chaudhary et al.
+2023](https://arxiv.org/abs/2308.01028) (Dream11) and [Agrawal & Patil
+2025](https://arxiv.org/abs/2510.16735)
+See the in-app **How It Works** page for full citations and an honest breakdown of what's sourced vs. assumed.
 
 ## Dashboard Pages
 
@@ -80,7 +81,7 @@ and an honest breakdown of what's sourced vs. assumed.
 ## Running Locally
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/GurKalra/reMultibands
 cd reMultiBands
 pip install -r requirements.txt   # or: pip install streamlit pandas
 streamlit run dashboard/app.py
